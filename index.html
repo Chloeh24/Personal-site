@@ -5,6 +5,7 @@
   <title>Chloe Ho Personal Site</title>
   <link href='styles.css' type='text/css' rel='stylesheet' />
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Raleway:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -53,10 +54,8 @@
     <h2>Things I've made</h2>
 
       <p> A lot of this was trial and error, made with a healthy dose of late-night frustration, frantic googling and eventually a 'Eureka' moment </p>
-      <div class="carousel">
-        <div class='arrow left'><img src='img/left-arrow.png' width = "90px" height="100px" onclick="changeSlide(-1)"></div>
+       
         <div class='slide-container'>
-           
                 <div class='slide'>
                     <a href='https://chloeh24.github.io/Random-Dice/'>
                      <img src='img/dicegame.png' alt='dicegame'>
@@ -82,11 +81,11 @@
                <img src='img/survey.png' alt='surveyform' >
              </a>
           </div>
-         
-        </div>
-        <div class='arrow right'><img src ='img/right-arrow.png' width = "90px" height="100px" onclick="changeSlide(1)"></div>
+          <div class='arrow left' onclick="changeSlide(-1)"><i class="fas fa-angle-left fa-7x" ></i></div>
+          <div class='arrow right' onclick="changeSlide(1)"><i class="fas fa-angle-right fa-7x"></i></div>
 
-</div>
+        </div>
+       
 
 
   </div>
