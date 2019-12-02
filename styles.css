@@ -101,23 +101,29 @@ nav {
 }
 
 .arrow {
-  border: 3px solid black;
+  border: 3px solid #000058;
   background-color: transparent;
-  border-radius: 10px;
-  padding: 30px;
+  border-radius: 25px;
+  padding: 10px 20px;
   cursor: pointer;
+}
+
+.arrow:hover {
+  background-color:#000058 ;
+  color:#fff;
+  transition: 0.4s ease;
 }
 
 .left {
   position: absolute;
-  top: 25%; 
-  left: 100px;
+  top: 20%; 
+  left: 120px;
 }
 
 .right {
   position: absolute;
-  top: 25%; 
-  right: 100px;
+  top: 20%; 
+  right: 120px;
 }
 
 
