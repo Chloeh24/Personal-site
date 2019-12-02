@@ -1,4 +1,6 @@
-
+* {
+  scroll-behavior: smooth;
+}
 body {
   text-align: center;
   font-family: "Raleway", sans-serif;
@@ -11,7 +13,7 @@ h1 {
 
 h2 {
   font-size: 5rem;
-  text-shadow: 2px 6px white;
+  text-shadow: 2px 6px #fff;
 }
 
 h1, h2 {
@@ -27,7 +29,7 @@ h3, p {
   margin: 0 auto;
   overflow: hidden;
   height: 100vh;
-  background-color: white;
+  background-color:#fff;
 }
 
 .purple {
@@ -58,14 +60,14 @@ nav {
   padding: 15px 40px;
   margin: 0 5px;
   font-size: 18px;
-  color: black;
+  color: #000;
   border-radius: 7px;
 }
 
 .nav-link:hover {
   background-color: indigo;
   transition-duration: 0.3s;
-  color: white;
+  color:#fff;
 }
 
 /* About */
@@ -101,15 +103,15 @@ nav {
 }
 
 .arrow {
-  border: 3px solid #000058;
-  background-color: transparent;
+  border: 3px solid #2f064d;
+  color: #2f064d;
   border-radius: 25px;
   padding: 10px 20px;
   cursor: pointer;
 }
 
 .arrow:hover {
-  background-color:#000058 ;
+  background-color:#3b0561 ;
   color:#fff;
   transition: 0.4s ease;
 }
@@ -129,14 +131,24 @@ nav {
 
 /*Contact me*/
 .contact-info {
-  list-style: none;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  padding-bottom: 4%;
+  margin: 10px 100px;
 }
 
-a img {
-  padding: 20px 40px;
-  width: 3rem;
+.social {
+  color: #000;
+  padding: 20px;
+  border: 2px solid transparent
+}
+
+.social:hover {
+  color: white;
+  background-color: rgba(101, 107, 104, 0.6);
+  transition: 0.4s;
 }
 
 /*Tablet screens*/
