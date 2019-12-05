@@ -27,7 +27,8 @@ h3 {
 
 p {
   font-size: 1rem;
-  margin: 0 15%;
+  line-height: 1.4;
+  margin: 0 5%;
 }
 
 /*container*/
@@ -95,32 +96,33 @@ nav {
 }
 
 #welcome > *{
-  z-index: 10;
+  z-index: 5;
   position: relative;
+  top: 10%;
 }
 
 
 /* About */
 .about {
   display: grid;
-  width: 80%;
+  width: 100%;
   grid-template-columns: 60% 40%;
 
 }
 
 .info p {
+  position: relative;
   text-align: left;
   font-size: 16px;
-  line-height: 1.4;
-  margin-bottom: 5%;
+  padding: 20px 30px;
 }
 
 #pic {
+  margin-right: 40px;
   margin-bottom: 40px;
   border: 1px solid black;
   padding: 30px;
   border-radius: 6px;
-
 }
 
 /*Slider*/
@@ -140,6 +142,16 @@ nav {
     padding: 10px 25px;
 }
 
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  0% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
 .arrow {
   border: 3px solid #2f064d;
   color: #2f064d;
@@ -156,13 +168,13 @@ nav {
 
 .left {
   position: absolute;
-  top: 20%; 
+  top: 30%; 
   left: 120px;
 }
 
 .right {
   position: absolute;
-  top: 20%; 
+  top: 30%; 
   right: 120px;
 }
 
@@ -194,5 +206,73 @@ nav {
   transition: 0.4s;
 }
 
-/*Tablet screens*/
-@media (max-width: 700px) {
+/*responsive screens*/
+@media (max-width: 600px) {
+  nav {
+
+  }
+
+}
+
+@media (max-width: 800px) {
+  .container .purple {
+    
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #pic {
+    padding: 40px 10px;
+    margin: 2% 5%;
+  }
+
+  .info p {
+    font-size: 15px;
+  }
+  
+  p {
+    font-size: 14px;
+    text-align: left;
+  }
+
+.slide-container {
+  margin: 0 auto;
+}
+
+  .arrow {
+    border: none;
+    color: white;
+  }
+
+  .arrow:hover {
+    padding: 10px;
+    background-color: #777373;
+    opacity: 0.6;
+  }
+
+  .left {
+    left: 30px;
+    top: 40%;
+  }
+
+  .right {
+    right: 30px;
+    top: 40%;
+  }
+}
+
+
+@media (min-width: 1024px) {
+    .slide img {
+      min-height: 50vh;
+      width: auto;
+    }
+
+    .left .right {
+      top: 40%;
+    }
+  
+}

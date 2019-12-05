@@ -26,5 +26,5 @@ function showSlides(n) {
     }
 
     slides[slideIndex-1].style.display = 'block';
-    setInterval(showSlides, 3000);
+    
 };
