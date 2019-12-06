@@ -209,14 +209,74 @@ nav {
 /*responsive screens*/
 @media (max-width: 600px) {
   nav {
-
+    display: inline-block;
+    left: 10px;
+    width: 60px; 
+    height: auto;
+    margin: 10px;
+    background-image: url('img/bars-solid.svg');
+    background-size: cover;
+    background-color: transparent;
+   }
+  
+   .navlist {
+     display: none;
+     position: absolute;
+     left: 0px;
+     top: 40px;
+     padding: 0;
+     background-color: rgba(255, 255, 255, 0.8);
+     min-width: 60px;
+     border-radius: 6px;
+   }
+  
+   nav:hover .navlist {
+     display: block;
+   }
+   
+   .nav-link {
+      display: block;
   }
 
-}
+  h1 {
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+
+  .arrow {
+    font-size: 10px;
+  }
+
+  #projects {
+    min-height: 80vh;
+  }
+
+  .slide img {
+    max-width: 80vw;
+    height: auto;
+  }
+
+
+  #contact p {
+    text-align: center;
+  }
+
+  .contact-info {
+    flex-wrap: wrap;
+    padding: 2px;
+  }
 
 @media (max-width: 800px) {
   .container .purple {
-    
+    min-height: 60vh;
   }
 
   .about {
