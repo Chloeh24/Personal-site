@@ -127,47 +127,7 @@ nav {
 
 /*Slider*/
 
-  .slider {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    object-fit: cover;
-  }
-
-  .slide-container {
-    list-style: none;
-    position: relative;
-    height: 100%;
-    transition: transform 500ms ease-in;
-  }
-  
-  .slide {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-.slider-nav {
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-}
-
-.slide-btns{
-  border: 0;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-  background: #b4b4b4;
-  margin: 0 10px;
-}
-
-.slide-btns.current-slide {
-  background: #2f2f2f
-}
-
+ 
 .arrow {
   border: 3px solid #2f064d;
   color: #2f064d;
@@ -184,16 +144,63 @@ nav {
 
 .left {
   position: absolute;
-  top: 30%; 
-  left: 120px;
+  top: 40%; 
+  left: 15%;
 }
 
 .right {
   position: absolute;
-  top: 30%; 
-  right: 120px;
+  top: 40%; 
+  right: 15%
 }
 
+
+/* projects */
+.projects-grid {
+  display: grid;
+  margin: 0 auto;
+  padding: 3% 2% 7% 2%;
+  width: 70%;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 40px;
+}
+
+.project-image{
+  max-width: 600px;
+  max-height: 350px;
+}
+ 
+.project-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project {
+  position: relative;
+}
+
+.project-title{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(84, 18, 131, 0.5);
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px #5f5d5d;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.project:hover .project-title{
+  opacity: 1;
+}
 
 /*Contact me*/
 #contact {
