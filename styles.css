@@ -129,9 +129,11 @@ nav {
 
  .slider {
    position: relative;
+   margin: 0 auto;
+   border: 2px solid #000;
    overflow: hidden;
-   width: 800px;
-   height: auto;
+   width: 75vw;
+   height: 60vh;
 
  }
 
@@ -145,39 +147,29 @@ nav {
    transition: opacity 0.4s ease-in;
  }
 
- .slide img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
- }
-
-.slide .current {
+.slide.current {
   opacity: 1;
-}
-
-.content {
-  position: absolute;
 }
 
 /*Background images */
 .slide:first-child {
-  background: url()
+  background: url('img/15823461_10154385926726559_4404916822253580889_n.jpg') no-repeat center cover;
 }
 
 .slide:nth-child(2) {
-  background: url()
+  background: url('img/IMG_20190820_152254_287.jpg') no-repeat center cover;
 }
 
 .slide:nth-child(3) {
-  background: url()
+  background: url('img/DSC_8069.JPG') no-repeat center cover;
 }
 
 .slide:nth-child(4) {
-  background: url()
+  background: url('img/DSC_8698.JPG') no-repeat center cover;
 }
 
 .slide:nth-child(5) {
-  background: url()
+  background: url('img/P1080391.JPG') no-repeat center cover;
 }
 
 .slide:nth-child(6) {
