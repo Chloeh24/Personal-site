@@ -103,33 +103,30 @@ nav {
 
 
 /* About */
-.about {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 60% 40%;
-
-}
-
-.info p {
-  position: relative;
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   text-align: left;
-  font-size: 16px;
-  padding: 20px 30px;
+  margin: 2% 10% 5% 10%;
+  padding: 10px;
 }
 
-#pic {
-  margin-right: 40px;
-  margin-bottom: 40px;
-  border: 1px solid black;
-  padding: 30px;
-  border-radius: 6px;
+.info img{
+  height: 700px;
+  width: auto;
+  margin-right: 100px;
+  border-radius: 15px;
 }
 
 /*Slider*/
+  #slider {
+    position: relative;
+  }
 
  .slider {
    position: relative;
-   margin: 0 auto;s
+   margin: 50px auto;
    overflow: hidden;
    width: 80vw;
    height: 70vh;
@@ -153,10 +150,9 @@ nav {
 
 .content {
   position: absolute;
-  top: 0;
-  margin: 0 auto;
-  width: 200px;
-  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  width: 300px;
+  background-color: rgba(54, 53, 53, 0.7);
   color:#fff;
 }
 
@@ -177,14 +173,14 @@ button:hover {
 
 button#next {
   position: absolute;
-  top: 45%;
-  right: 25px;
+  top: 50%;
+  right: 6%;
 }
 
 button#prev {
   position: absolute;
-  top: 45%;
-  left: 25px;
+  top: 50%;
+  left: 6%;
 }
 
 /*Background images */
@@ -197,19 +193,23 @@ button#prev {
 }
 
 .slide:nth-child(3) {
-  background: url('img/DSC_8069.JPG') no-repeat center top/contain;
+  background: url('img/10986883_10152788758401559_5872581111970009155_n2.jpg') no-repeat center top/contain;
 }
 
 .slide:nth-child(4) {
-  background: url('img/DSC_8698.JPG') no-repeat center top/contain;
+  background: url('img/DSC_8069.JPG') no-repeat center top/contain;
 }
 
 .slide:nth-child(5) {
-  background: url('img/P1080391.JPG') no-repeat center top/contain;
+  background: url('img/DSC_8698.JPG') no-repeat center top/contain;
 }
 
 .slide:nth-child(6) {
-  background: url()
+  background: url('img/P1080391.JPG') no-repeat center top/contain;
+}
+
+.slide:nth-child(7) {
+  background: url('img/11134043_10204222904597437_8191035203561975415_o.jpg') no-repeat center top/contain;
 }
 
 /* projects */

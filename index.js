@@ -2,8 +2,7 @@ var slides = document.querySelectorAll('.slide')
 var next = document.querySelector('#next')
 var prev = document.querySelector('#prev')
 
-var auto = false;
-var intervalTime = 5000;
+var auto = true;
 var slideInterval;
 
 //show next
@@ -29,7 +28,7 @@ function prevSlide() {
     if(current.previousElementSibling) {
         current.previousElementSibling.classList.add('current');
     } else {
-        slides[slide.length-1].classList.add('current');
+        slides[slides.length-1].classList.add('current');
     }
 };
 
@@ -37,8 +36,23 @@ function prevSlide() {
 
 next.addEventListener('click', function() {
     nextSlide();
+
+    if(auto) {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, 5000)
+    }
+
 });
 
 prev.addEventListener('click', function() {
     prevSlide();
+
+    if(auto) {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, 5000)
+    }
 });
+
+if(auto){
+    slideInterval = setInterval(nextSlide, 5000)
+}
