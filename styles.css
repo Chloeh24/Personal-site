@@ -9,6 +9,7 @@ body {
 h1 {
   padding-top: 10%;
   font-size: 9rem;
+  text-shadow: 3px 6px #fff;
 }
 
 h2 {
@@ -79,7 +80,8 @@ nav {
 
 /*Home*/
 #welcome {
-  background-image: url('img/rocknwool-x3N59fMm0ME-unsplash.jpg');
+  position: relative;
+  background-image: url('img/rodion-kutsaev-8P-uQaTd8rw-unsplash.jpg');
   background-size: cover;
   height: 100%;
 }
@@ -98,7 +100,6 @@ nav {
 #welcome > *{
   z-index: 5;
   position: relative;
-  top: 10%;
 }
 
 
@@ -115,7 +116,7 @@ nav {
 .info img{
   height: 700px;
   width: auto;
-  margin-right: 100px;
+  margin-right: 50px;
   border-radius: 15px;
 }
 
@@ -160,7 +161,7 @@ button {
   border: 2px solid indigo;
   font-size: 1em;
   background-color: transparent;
-  padding: 13px 16px;
+  padding: 15px 18px;
   cursor: pointer;
   border-radius: 4px;
   outline: none;
@@ -219,7 +220,7 @@ button#prev {
   padding: 3% 2% 7% 2%;
   width: 70%;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  grid-gap: 40px;
+  grid-gap: 5%;
 }
 
 .project-image{
@@ -234,14 +235,16 @@ button#prev {
 }
 .project {
   position: relative;
+  max-width: 600px;
+  max-height: 350px;
 }
 
 .project-title{
   position: absolute;
   top: 0;
   bottom: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
   background: rgba(84, 18, 131, 0.5);
   text-decoration: none;
   color: white;
@@ -331,10 +334,6 @@ button#prev {
     margin: 0 10px;
   }
 
-  .arrow {
-    font-size: 10px;
-  }
-
   #projects {
     min-height: 80vh;
   }
@@ -359,61 +358,23 @@ button#prev {
     min-height: 60vh;
   }
 
-  .about {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #pic {
-    padding: 40px 10px;
-    margin: 2% 5%;
-  }
-
-  .info p {
-    font-size: 15px;
-  }
   
-  p {
-    font-size: 14px;
-    text-align: left;
-  }
-
-  .slide-container {
-    margin: 0 auto;
-  }
-
-  .arrow {
-    font-size: 20px;
-    border: none;
-    color: white;
-  }
-
-  .arrow:hover {
-    padding: 10px;
-    background-color: #777373;
-    opacity: 0.6;
-  }
-
-  .left {
-    left: 0px;
-    top: 40%;
-  }
-
-  .right {
-    right: 0px;
-    top: 40%;
-  }
 }
 
 
 @media (min-width: 1024px) {
+    .info {
+      margin: 2%;
+    }
+
     .slide {
       min-height: 50vh;
       width: auto;
     }
 
-    .left .right {
-      top: 40%;
+      .project {
+        height: 300px;
+        width: auto;
     }
   
 }
