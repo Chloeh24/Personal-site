@@ -1,6 +1,7 @@
 var slides = document.querySelectorAll('.slide')
 var next = document.querySelector('#next')
 var prev = document.querySelector('#prev')
+
 var auto = false;
 var intervalTime = 5000;
 var slideInterval;
@@ -8,7 +9,7 @@ var slideInterval;
 //show next
 
 function nextSlide() {
-    var current = document.querySelector('current');
+    var current = document.querySelector('.current');
     current.classList.remove('current');
 
     if(current.nextElementSibling) {
@@ -17,13 +18,12 @@ function nextSlide() {
         slides[0].classList.add('current');
     }
 
-    setTimeout(() => current.classList.remove('current')
-}
+};
 
 //show prev;
 
 function prevSlide() {
-    var current = document.querySelector('current');
+    var current = document.querySelector('.current');
     current.classList.remove('current');
 
     if(current.previousElementSibling) {
@@ -31,14 +31,14 @@ function prevSlide() {
     } else {
         slides[slide.length-1].classList.add('current');
     }
+};
 
-    setTimeout(() => current.classList.remove('current')
-}
+//buttons
 
 next.addEventListener('click', function() {
     nextSlide();
-}
+});
 
 prev.addEventListener('click', function() {
     prevSlide();
-}
+});
