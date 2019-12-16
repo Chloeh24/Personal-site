@@ -216,17 +216,16 @@ button#prev {
 /* projects */
 .projects-grid {
   display: grid;
-  margin: 0 auto;
+  margin: 0 5%;
   padding: 3% 2% 7% 2%;
-  width: 70%;
+  width: 100%;
   min-height: 90vh;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  grid-gap: 5%;
 }
 
 .project-image{
-  max-width: 600px;
-  max-height: 350px;
+  max-width: 450px;
+  max-height: 250px;
 }
  
 .project-image img{
@@ -236,8 +235,8 @@ button#prev {
 }
 .project {
   position: relative;
-  max-width: 600px;
-  max-height: 350px;
+  max-width: 450px;
+  max-height: 250px;
 }
 
 .project-title{
