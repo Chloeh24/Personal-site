@@ -38,6 +38,7 @@ p {
   overflow: hidden;
   min-height: 100vh;
   background-color:#fff;
+  padding: 1% 2% 4% 2%;
 }
 
 .purple {
@@ -109,15 +110,65 @@ nav {
   flex-direction: row;
   justify-content: center;
   text-align: left;
-  margin: 2% 10% 5% 10%;
+  margin: 2% 0 5% 0;
   padding: 10px;
 }
 
 .info img{
   height: 700px;
+  float: right;
   width: auto;
   margin-right: 50px;
   border-radius: 15px;
+}
+
+
+/* projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit minmax(160px, 1fr));
+  grid-auto-flow: dense;
+  align-items: center;
+  margin: 2% 5% 5% 5%;
+  grid-gap: 1.5rem;
+}
+ 
+.project {
+  position: relative;
+  height: 300px;
+  grid-column: span 2;
+}
+
+
+.project-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-title{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(84, 18, 131, 0.5);
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px #5f5d5d;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease-in;
+}
+
+.project:hover .project-title{
+  opacity: 1;
+  border: 2px solid white;
 }
 
 /*Slider*/
@@ -129,7 +180,7 @@ nav {
    position: relative;
    margin: 50px auto;
    overflow: hidden;
-   width: 80vw;
+   width: 70vw;
    height: 70vh;
 
  }
@@ -211,55 +262,6 @@ button#prev {
 
 .slide:nth-child(7) {
   background: url('img/11134043_10204222904597437_8191035203561975415_o.jpg') no-repeat center top/contain;
-}
-
-/* projects */
-.projects-grid {
-  display: grid;
-  margin: 0 5%;
-  padding: 3% 2% 7% 2%;
-  width: 90%;
-  min-height: 90vh;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-}
-
-.project-image{
-  max-width: 450px;
-  max-height: 250px;
-}
- 
-.project-image img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.project {
-  position: relative;
-  max-width: 450px;
-  max-height: 250px;
-}
-
-.project-title{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(84, 18, 131, 0.5);
-  text-decoration: none;
-  color: white;
-  text-shadow: 2px 2px #5f5d5d;
-  font-size: 2rem;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.25s ease-in;
-}
-
-.project:hover .project-title{
-  opacity: 1;
 }
 
 /*Contact me*/
@@ -358,6 +360,11 @@ button#prev {
     min-height: 60vh;
   }
 
+  .project-image img {
+    width: 400px;
+    height: 100%;
+    object-fit: fill;
+  }
 }
 
 
