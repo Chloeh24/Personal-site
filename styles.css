@@ -213,6 +213,7 @@ nav {
   width: 300px;
   background-color: rgba(54, 53, 53, 0.7);
   color:#fff;
+  font-size: 1rem;
 }
 
 button {
@@ -322,7 +323,7 @@ button#prev {
      border-radius: 6px;
    }
   
-   nav:hover .navlist {
+   nav:hover .navlist, nav:active .navlist {
      display: block;
    }
    
@@ -361,12 +362,32 @@ button#prev {
     margin-bottom: 20px;
   }
 
-
-  .slide {
-    max-width: 80vw;
-    height: auto;
+  .projects-grid {
+    grid-gap: 3px;
   }
 
+  .project, .project-image{
+    width: 250px;
+    height: 150px;
+  }
+
+  .slide-container {
+    height: 30vh;
+    margin: 10px auto;
+  }
+ 
+  .buttons {
+    display: none;
+  }
+
+  .content {
+    width: 200px;
+  }
+
+  .content h3 {
+    font-size: .8rem;
+  }
+  
   .contact-info {
     flex-wrap: wrap;
     padding: 2px;
@@ -393,7 +414,7 @@ button#prev {
     object-fit: fill;
   }
 
-  .slider {
+  .slide-container {
     height: 30vh;
   }
 
