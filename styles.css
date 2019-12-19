@@ -125,6 +125,7 @@ nav {
   float: right;
   width: auto;
   margin-left: 5%;
+  margin-bottom: 2%;
   border-radius: 15px;
 }
 
@@ -182,7 +183,7 @@ nav {
     position: relative;
   }
 
- .slider {
+ .slide-container {
    position: relative;
    margin: 50px auto;
    overflow: hidden;
@@ -197,7 +198,7 @@ nav {
    bottom: 0;
    width: 100%;
    height: 100%;
-  opacity: 0;
+    opacity: 0;
   transition: opacity 0.4s ease-in;
  
 }
@@ -243,31 +244,31 @@ button#prev {
 
 /*Background images */
 .slide:first-child {
-  background: url('img/15823461_10154385926726559_4404916822253580889_n.jpg') no-repeat center top/contain;
+  background: url('img/15823461_10154385926726559_4404916822253580889_n.jpg') no-repeat center center/contain;
 }
 
 .slide:nth-child(2) {
-  background: url('img/IMG_20190820_152254_287.jpg') no-repeat center top/contain;
+  background: url('img/IMG_20190820_152254_287.jpg') no-repeat center center/contain;
 }
 
 .slide:nth-child(3) {
-  background: url('img/10986883_10152788758401559_5872581111970009155_n2.jpg') no-repeat center top/contain;
+  background: url('img/10986883_10152788758401559_5872581111970009155_n2.jpg') no-repeat center center/contain;
 }
 
 .slide:nth-child(4) {
-  background: url('img/DSC_8069.JPG') no-repeat center top/contain;
+  background: url('img/DSC_8069.JPG') no-repeat center center/contain;
 }
 
 .slide:nth-child(5) {
-  background: url('img/DSC_8698.JPG') no-repeat center top/contain;
+  background: url('img/DSC_8698.JPG') no-repeat center center/contain;
 }
 
 .slide:nth-child(6) {
-  background: url('img/P1080391.JPG') no-repeat center top/contain;
+  background: url('img/P1080391.JPG') no-repeat center center/contain;
 }
 
 .slide:nth-child(7) {
-  background: url('img/11134043_10204222904597437_8191035203561975415_o.jpg') no-repeat center top/contain;
+  background: url('img/11134043_10204222904597437_8191035203561975415_o.jpg') no-repeat center center/contain;
 }
 
 /*Contact me*/
@@ -298,7 +299,7 @@ button#prev {
 }
 
 /*responsive screens*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   nav {
     display: inline-block;
     left: 10px;
@@ -329,31 +330,41 @@ button#prev {
       display: block;
   }
 
-  h1 {
-    font-size: 7rem;
+  .container {
+    min-height: 50vh;
   }
+
+.title {
+  top: 30%;
+}
+
+.title h1 {
+  font-size: 3rem;
+}
+
+.title h3 {
+  font-size: 1rem;
+  margin-left: 40px;
+  margin-right: 40px;
+}
 
   h2 {
-    font-size: 4rem;
+    font-size: 1.8rem;
   }
 
-  h3 {
-    font-size: 16px;
-    margin: 0 10px;
+  p {
+    font-size: .7rem;
   }
 
-  #projects {
-    min-height: 80vh;
+  .info img {
+    height: 200px;
+    margin-bottom: 20px;
   }
+
 
   .slide {
     max-width: 80vw;
     height: auto;
-  }
-
-
-  #contact p {
-    text-align: center;
   }
 
   .contact-info {
@@ -362,10 +373,9 @@ button#prev {
   }
 }
 
-@media only screen and (max-width: 800px) {
-
+@media only screen and (min-width: 480.01px) and (max-width: 800px) {
   .container {
-    min-height: 60px;
+    min-height: 60vh;
   }
 
   #welcome {
@@ -375,17 +385,20 @@ button#prev {
 
   .info img {
     height: 400px;
-    margin-bottom: 2%;
-  }
-
-  .project-grid {
-  
   }
 
   .project-image{
     width: 500px;
     height: 100%;
     object-fit: fill;
+  }
+
+  .slider {
+    height: 30vh;
+  }
+
+  button#next, button#prev {
+    top: 60%;
   }
 }
 
