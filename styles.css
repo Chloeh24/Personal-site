@@ -274,7 +274,7 @@ button#prev {
 
 /*Contact me*/
 #contact {
-  min-height: 35vh;
+  min-height: 20vh;
 }
 
 .contact-info {
@@ -371,6 +371,14 @@ button#prev {
     height: 150px;
   }
 
+  .project-title{
+    font-size: 1rem;
+  }
+
+  #slider p {
+    margin: 0 15%;
+  }
+
   .slide-container {
     height: 30vh;
     margin: 10px auto;
@@ -392,6 +400,24 @@ button#prev {
     flex-wrap: wrap;
     padding: 2px;
   }
+
+  .social {
+    padding: 3px 3px;
+    margin: 5px;
+    font-size: 10px;
+  }
+
+  .social .iconify {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social:hover {
+    color: indigo;
+    background-color: transparent
+  }
+
+
 }
 
 @media only screen and (min-width: 480.01px) and (max-width: 800px) {
