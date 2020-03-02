@@ -226,6 +226,10 @@ button {
   outline: none;
 }
 
+button span {
+  display: none;
+}
+
 button:hover {
   background-color: indigo;
   color: white;
