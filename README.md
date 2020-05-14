@@ -13,5 +13,7 @@ Single page personal website made to apply to Founders and Coders Spring 2020 (F
 - Not use a GitHub theme
 - Not use any JavaScript or CSS libraries like Bootstrap or jQuery or use an image carousel package like Flickity ⁠— we want to see your own code.
 
+
+
 ![](https://i.imgur.com/nIkZXdv.png)
 
